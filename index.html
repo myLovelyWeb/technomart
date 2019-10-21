@@ -359,7 +359,7 @@
       var i, tabcontent, tablinks;
 
       tablinks = document.getElementsByClassName('vertical-tabs__btn');
-      console.log('test');
+      
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace('vertical-tabs__btn--active', '');
       }
@@ -369,7 +369,6 @@
         tabcontent[i].style.display = 'none';
       }
 
-      console.log(tabNumber);
       document.getElementById(tabNumber).style.display = 'block';
       evt.currentTarget.classList.add('vertical-tabs__btn--active');
     }
